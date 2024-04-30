@@ -3,3 +3,5 @@ node_module/
 *.joblib
 
 *.pkl
+
+*.lib
