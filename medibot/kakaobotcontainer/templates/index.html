@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>약 정보 상세 페이지</title>
+    <style>
+      body {
+        margin-top: 20px;
+        margin-right: 30px;
+        margin-left: 30px;
+        line-height: 1.5;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 20px;
+      }
+
+      .img {
+        width: auto; /* 원하는 가로 크기 설정 */
+        height: 35px; /* 원하는 세로 크기 설정 */
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+
+      .rounded-frame {
+        width: 40px; /* 원하는 가로 크기 설정 */
+        height: 40px; /* 원하는 세로 크기 설정 */
+        border-radius: 10px; /* 원하는 모서리 둥금 정도 설정 */
+        overflow: hidden; /* 이미지가 모서리를 넘어가지 않도록 처리 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 추가 (선택사항) */
+      }
+
+      .rounded-frame img {
+        width: 100%; /* 부모 요소에 대해 100% 너비 설정 */
+        height: 100%; /* 부모 요소에 대해 100% 높이 설정 */
+        object-fit: cover; /* 이미지가 부모 요소에 꽉 차도록 설정 (부분적으로 잘릴 수 있음) */
+      }
+      .center-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .center-container img {
+        width: 300px; /* 원하는 너비로 조절 */
+        height: auto; /* 세로 비율 유지 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 챗봇텍스트로고 -->
+       <div class="container">
+      <img
+        class="img"
+        src="https://proxy.goorm.io/service/659505cfe93b401d1e6806e9_d3af2lf7OyaWTWScDvV.run.goorm.io/9080/file/load/textlogo_medibot.png?path=d29ya3NwYWNlJTJGa2FrYW9ib3Rjb250YWluZXIlMkZ0ZW1wbGF0ZXMlMkZ0ZXh0bG9nb19tZWRpYm90LnBuZw==&docker_id=d3af2lf7OyaWTWScDvV&secure_session_id=-smQvN_UPV9JRmlCSgMIDcWTWoyqOLK8"
+        alt="medibot"
+      />
+      <!-- 챗봇이미지로고 -->
+      <div class="rounded-frame">
+        <img
+          src="https://proxy.goorm.io/service/659505cfe93b401d1e6806e9_d3af2lf7OyaWTWScDvV.run.goorm.io/9080/file/load/2t2flogo.png?path=d29ya3NwYWNlJTJGa2FrYW9ib3Rjb250YWluZXIlMkZ0ZW1wbGF0ZXMlMkYydDJmbG9nby5wbmc=&docker_id=d3af2lf7OyaWTWScDvV&secure_session_id=-smQvN_UPV9JRmlCSgMIDcWTWoyqOLK8"
+          alt="medibot_img"
+        />
+      </div>
+    </div>
+
+    <!-- 약이미지 -->
+    <div class="center-container">
+      <img src="{{ img }}" alt="약 이미지" />
+    </div>
+
+    <!-- 약 이름 -->
+    <h3>{{ name }}</h3>
+
+    <!-- 구분선 -->
+    <hr />
+
+    <!-- 내용 텍스트 -->
+    <p><strong>효능</strong></p>
+    <p>{{ eff }}</p>
+
+    <!-- 제조사 -->
+    <p><strong>제조사</strong></p>
+    <p>{{ com }}</p>
+  </body>
+</html>

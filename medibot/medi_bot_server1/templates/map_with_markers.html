@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a937953fe007de5f9f853ea73546e97b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a937953fe007de5f9f853ea73546e97b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a937953fe007de5f9f853ea73546e97b = L.map(
+                "map_a937953fe007de5f9f853ea73546e97b",
+                {
+                    center: [37.5669747, 127.040228],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b12ec9bbb535199f28a0d07526c7c175 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b12ec9bbb535199f28a0d07526c7c175.addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var marker_0f0b64cd98ea5346b7464d175170d2b9 = L.marker(
+                [37.5669747, 127.040228],
+                {"iconSize": [30, 30]}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_fa9b064794251e53dcf6ec7b31bcada6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-location-crosshairs", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0f0b64cd98ea5346b7464d175170d2b9.setIcon(icon_fa9b064794251e53dcf6ec7b31bcada6);
+        
+    
+        var popup_fb5cd67407df4fac7567925b59ce782c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddeeef3343fd0c3521213a048578ad64 = $(`<div id="html_ddeeef3343fd0c3521213a048578ad64" style="width: 100.0%; height: 100.0%;">내위치</div>`)[0];
+                popup_fb5cd67407df4fac7567925b59ce782c.setContent(html_ddeeef3343fd0c3521213a048578ad64);
+            
+        
+
+        marker_0f0b64cd98ea5346b7464d175170d2b9.bindPopup(popup_fb5cd67407df4fac7567925b59ce782c)
+        ;
+
+        
+    
+    
+            var marker_13863abdb6f48dc38497b4840ceb4d66 = L.marker(
+                [37.5658522754099, 127.041939050117],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_09fa6c7bd561d397ba0f9ede8e7d2f0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_13863abdb6f48dc38497b4840ceb4d66.setIcon(icon_09fa6c7bd561d397ba0f9ede8e7d2f0a);
+        
+    
+        var popup_cbe4a845cf7d8562caada73dc794f292 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88c0dcdddfaf8925c6c418731a7bfacb = $(`<div id="html_88c0dcdddfaf8925c6c418731a7bfacb" style="width: 100.0%; height: 100.0%;">햇살약국 - 전화번호: 02-2298-2825 </div>`)[0];
+                popup_cbe4a845cf7d8562caada73dc794f292.setContent(html_88c0dcdddfaf8925c6c418731a7bfacb);
+            
+        
+
+        marker_13863abdb6f48dc38497b4840ceb4d66.bindPopup(popup_cbe4a845cf7d8562caada73dc794f292)
+        ;
+
+        
+    
+    
+            var marker_306fd964a77d423144f6c0396bdf36ed = L.marker(
+                [37.5658799438, 127.0416626578],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_b0a2518c32d83d6b2d86125e09fe2536 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_306fd964a77d423144f6c0396bdf36ed.setIcon(icon_b0a2518c32d83d6b2d86125e09fe2536);
+        
+    
+        var popup_a2ec3328d736eb0116b2e01722654a1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfcbe44e89d51eed0d0d690c64a0f141 = $(`<div id="html_cfcbe44e89d51eed0d0d690c64a0f141" style="width: 100.0%; height: 100.0%;">수지약국 - 전화번호: 02-554-9124 </div>`)[0];
+                popup_a2ec3328d736eb0116b2e01722654a1b.setContent(html_cfcbe44e89d51eed0d0d690c64a0f141);
+            
+        
+
+        marker_306fd964a77d423144f6c0396bdf36ed.bindPopup(popup_a2ec3328d736eb0116b2e01722654a1b)
+        ;
+
+        
+    
+    
+            var marker_c11427bc2392f3aa4d95404330fbb9f5 = L.marker(
+                [37.5625277935085, 127.034056746152],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_289391df8040efdf1f2f47296f0f0408 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_c11427bc2392f3aa4d95404330fbb9f5.setIcon(icon_289391df8040efdf1f2f47296f0f0408);
+        
+    
+        var popup_573bd0d5d762f7f0a1ade77abd6f5464 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75f66d17b7afd0efcd9f1990eb771747 = $(`<div id="html_75f66d17b7afd0efcd9f1990eb771747" style="width: 100.0%; height: 100.0%;">조이온누리약국 - 전화번호: 02-2282-7808 </div>`)[0];
+                popup_573bd0d5d762f7f0a1ade77abd6f5464.setContent(html_75f66d17b7afd0efcd9f1990eb771747);
+            
+        
+
+        marker_c11427bc2392f3aa4d95404330fbb9f5.bindPopup(popup_573bd0d5d762f7f0a1ade77abd6f5464)
+        ;
+
+        
+    
+    
+            var marker_52f81388fd9a5eddddcb90855b44fbcf = L.marker(
+                [37.5893839805739, 127.007732908993],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_4cf9384077893fb9526fce70094d3a7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_52f81388fd9a5eddddcb90855b44fbcf.setIcon(icon_4cf9384077893fb9526fce70094d3a7d);
+        
+    
+        var popup_ce9a713e0a65265950092210ecb57681 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f99693be983233b419e993837b9ac574 = $(`<div id="html_f99693be983233b419e993837b9ac574" style="width: 100.0%; height: 100.0%;">보림약국 - 전화번호: 02-762-7521 </div>`)[0];
+                popup_ce9a713e0a65265950092210ecb57681.setContent(html_f99693be983233b419e993837b9ac574);
+            
+        
+
+        marker_52f81388fd9a5eddddcb90855b44fbcf.bindPopup(popup_ce9a713e0a65265950092210ecb57681)
+        ;
+
+        
+    
+    
+            var marker_8048b2cc8428ac6422b67b86f31a0d54 = L.marker(
+                [37.5996244278284, 127.087415682008],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_585fca45576b2f356a6740b19de0e490 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_8048b2cc8428ac6422b67b86f31a0d54.setIcon(icon_585fca45576b2f356a6740b19de0e490);
+        
+    
+        var popup_82ec3423487d8e06028a135ef0380ae5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a09cbeadb8dc84ea9db3b10eb02ed202 = $(`<div id="html_a09cbeadb8dc84ea9db3b10eb02ed202" style="width: 100.0%; height: 100.0%;">참약국 - 전화번호: 02-2208-1156 </div>`)[0];
+                popup_82ec3423487d8e06028a135ef0380ae5.setContent(html_a09cbeadb8dc84ea9db3b10eb02ed202);
+            
+        
+
+        marker_8048b2cc8428ac6422b67b86f31a0d54.bindPopup(popup_82ec3423487d8e06028a135ef0380ae5)
+        ;
+
+        
+    
+    
+            var marker_2fa7edd81700e4e6d3738052cde2bb8d = L.marker(
+                [37.5623942326737, 127.033224444422],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_e20ed77cde6496d93d0d4d17bbd1c90f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_2fa7edd81700e4e6d3738052cde2bb8d.setIcon(icon_e20ed77cde6496d93d0d4d17bbd1c90f);
+        
+    
+        var popup_1c91757728a5d508c93bc0d50bced065 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a50fcc9e3d73162864bc1cc8aeb68a85 = $(`<div id="html_a50fcc9e3d73162864bc1cc8aeb68a85" style="width: 100.0%; height: 100.0%;">엄마손약국 - 전화번호: 02-6953-2773 </div>`)[0];
+                popup_1c91757728a5d508c93bc0d50bced065.setContent(html_a50fcc9e3d73162864bc1cc8aeb68a85);
+            
+        
+
+        marker_2fa7edd81700e4e6d3738052cde2bb8d.bindPopup(popup_1c91757728a5d508c93bc0d50bced065)
+        ;
+
+        
+    
+    
+            var marker_c1ce9fecfecbc2c37b796d0284010f7c = L.marker(
+                [37.5658347475768, 127.043074779356],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_6893cd00d2412385f2da0bbb0f0c338f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_c1ce9fecfecbc2c37b796d0284010f7c.setIcon(icon_6893cd00d2412385f2da0bbb0f0c338f);
+        
+    
+        var popup_d0b415a00ee00a65877b884639bb2951 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ac9f825b650246139500d2feba522c2 = $(`<div id="html_8ac9f825b650246139500d2feba522c2" style="width: 100.0%; height: 100.0%;">참사랑약국 - 전화번호: 02-2292-7369 </div>`)[0];
+                popup_d0b415a00ee00a65877b884639bb2951.setContent(html_8ac9f825b650246139500d2feba522c2);
+            
+        
+
+        marker_c1ce9fecfecbc2c37b796d0284010f7c.bindPopup(popup_d0b415a00ee00a65877b884639bb2951)
+        ;
+
+        
+    
+    
+            var marker_fcd92cce33fe886b136dc5e97d31c834 = L.marker(
+                [37.5734702010852, 127.031137416866],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_d40fe1f5cdae5c53d1293875a76c7b56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_fcd92cce33fe886b136dc5e97d31c834.setIcon(icon_d40fe1f5cdae5c53d1293875a76c7b56);
+        
+    
+        var popup_d6686c560e64f7b7cc7c7f1b2d315aac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a7b12525c713c7b58b92794deaba03c = $(`<div id="html_3a7b12525c713c7b58b92794deaba03c" style="width: 100.0%; height: 100.0%;">신상록수약국 - 전화번호: 02-926-6969 </div>`)[0];
+                popup_d6686c560e64f7b7cc7c7f1b2d315aac.setContent(html_3a7b12525c713c7b58b92794deaba03c);
+            
+        
+
+        marker_fcd92cce33fe886b136dc5e97d31c834.bindPopup(popup_d6686c560e64f7b7cc7c7f1b2d315aac)
+        ;
+
+        
+    
+    
+            var marker_a544535e21cfd7bcc6870b2fc6630945 = L.marker(
+                [37.5768030967407, 127.025796515924],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_61b5092eefbe68e5bfb82c0863711c13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_a544535e21cfd7bcc6870b2fc6630945.setIcon(icon_61b5092eefbe68e5bfb82c0863711c13);
+        
+    
+        var popup_6f7f1c8cdc356df757394320d8e5d165 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a471d6bdf4ae51762e7fc1983b57357 = $(`<div id="html_0a471d6bdf4ae51762e7fc1983b57357" style="width: 100.0%; height: 100.0%;">하모니약국 - 전화번호: 02-926-8800 </div>`)[0];
+                popup_6f7f1c8cdc356df757394320d8e5d165.setContent(html_0a471d6bdf4ae51762e7fc1983b57357);
+            
+        
+
+        marker_a544535e21cfd7bcc6870b2fc6630945.bindPopup(popup_6f7f1c8cdc356df757394320d8e5d165)
+        ;
+
+        
+    
+    
+            var marker_e1e1dc9a027d5261ba03e1c84b7bcd3e = L.marker(
+                [37.5478154393, 127.06781108459998],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_c73c0b06f692b11c695a6b74521a78f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_e1e1dc9a027d5261ba03e1c84b7bcd3e.setIcon(icon_c73c0b06f692b11c695a6b74521a78f1);
+        
+    
+        var popup_dfdf21fbc38563f62fe6af15d70b4141 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5579861287e02b1b79025427172bb5e7 = $(`<div id="html_5579861287e02b1b79025427172bb5e7" style="width: 100.0%; height: 100.0%;">스타온누리약국 - 전화번호: 02-2039-2733 </div>`)[0];
+                popup_dfdf21fbc38563f62fe6af15d70b4141.setContent(html_5579861287e02b1b79025427172bb5e7);
+            
+        
+
+        marker_e1e1dc9a027d5261ba03e1c84b7bcd3e.bindPopup(popup_dfdf21fbc38563f62fe6af15d70b4141)
+        ;
+
+        
+    
+    
+            var marker_7b7c09b9e828766f8e62ecde8a9d4b20 = L.marker(
+                [37.5890786091259, 127.008106970359],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_f05a1a13306a4b8345f9de6ca9370c6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_7b7c09b9e828766f8e62ecde8a9d4b20.setIcon(icon_f05a1a13306a4b8345f9de6ca9370c6f);
+        
+    
+        var popup_e008a1fd20e84ba44fd254009995cc32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdef3d0d06a969c00a7c809b391e5e23 = $(`<div id="html_cdef3d0d06a969c00a7c809b391e5e23" style="width: 100.0%; height: 100.0%;">굿모닝약국 - 전화번호: 02-916-3623 </div>`)[0];
+                popup_e008a1fd20e84ba44fd254009995cc32.setContent(html_cdef3d0d06a969c00a7c809b391e5e23);
+            
+        
+
+        marker_7b7c09b9e828766f8e62ecde8a9d4b20.bindPopup(popup_e008a1fd20e84ba44fd254009995cc32)
+        ;
+
+        
+    
+    
+            var marker_a3eccfdebdf51e886c9a61bdabd43107 = L.marker(
+                [37.5627530359422, 127.033449840725],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_1ca9be3c4ff5da85b69590a9755a5f08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_a3eccfdebdf51e886c9a61bdabd43107.setIcon(icon_1ca9be3c4ff5da85b69590a9755a5f08);
+        
+    
+        var popup_74538be7d50e7556ae405df33c26330d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9061398425beac23edfebbff3b46f6a0 = $(`<div id="html_9061398425beac23edfebbff3b46f6a0" style="width: 100.0%; height: 100.0%;">산호약국 - 전화번호: 02-2298-5414 </div>`)[0];
+                popup_74538be7d50e7556ae405df33c26330d.setContent(html_9061398425beac23edfebbff3b46f6a0);
+            
+        
+
+        marker_a3eccfdebdf51e886c9a61bdabd43107.bindPopup(popup_74538be7d50e7556ae405df33c26330d)
+        ;
+
+        
+    
+    
+            var marker_11847270913f6bcb027eaa6adc59ba07 = L.marker(
+                [37.5374066951935, 127.083099910723],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_7c0259f726fb9df985c6d7246dc009d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_11847270913f6bcb027eaa6adc59ba07.setIcon(icon_7c0259f726fb9df985c6d7246dc009d6);
+        
+    
+        var popup_8965398c1c2442e148dd0b86aac9bb96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83d3235afcd43e0d6840353cb4c719fe = $(`<div id="html_83d3235afcd43e0d6840353cb4c719fe" style="width: 100.0%; height: 100.0%;">조은우리약국 - 전화번호: 02-453-4848 </div>`)[0];
+                popup_8965398c1c2442e148dd0b86aac9bb96.setContent(html_83d3235afcd43e0d6840353cb4c719fe);
+            
+        
+
+        marker_11847270913f6bcb027eaa6adc59ba07.bindPopup(popup_8965398c1c2442e148dd0b86aac9bb96)
+        ;
+
+        
+    
+    
+            var marker_7b0db7e95b3c23e384fecaeb48c7c8d3 = L.marker(
+                [37.5891500451849, 127.008289042894],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_a9d8ba808e5104b06827b3731dd40d75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_7b0db7e95b3c23e384fecaeb48c7c8d3.setIcon(icon_a9d8ba808e5104b06827b3731dd40d75);
+        
+    
+        var popup_94f81f527f911045f484afc4f3353e3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff3c18036b92b2e5127e68286af16b32 = $(`<div id="html_ff3c18036b92b2e5127e68286af16b32" style="width: 100.0%; height: 100.0%;">참약사엘림약국 - 전화번호: 02-764-5291 </div>`)[0];
+                popup_94f81f527f911045f484afc4f3353e3c.setContent(html_ff3c18036b92b2e5127e68286af16b32);
+            
+        
+
+        marker_7b0db7e95b3c23e384fecaeb48c7c8d3.bindPopup(popup_94f81f527f911045f484afc4f3353e3c)
+        ;
+
+        
+    
+    
+            var marker_030e13e1b6424992562e7420d8fc40a4 = L.marker(
+                [37.5623299333488, 127.03437221242],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_2476b2b76cd35cff82e525d709bf67c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_030e13e1b6424992562e7420d8fc40a4.setIcon(icon_2476b2b76cd35cff82e525d709bf67c8);
+        
+    
+        var popup_bcb384814187b75505ff9ff97ba9db8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4953d697b8b8235a9cd5b77085f7961c = $(`<div id="html_4953d697b8b8235a9cd5b77085f7961c" style="width: 100.0%; height: 100.0%;">건강한약국 - 전화번호: 02-2231-8803 </div>`)[0];
+                popup_bcb384814187b75505ff9ff97ba9db8e.setContent(html_4953d697b8b8235a9cd5b77085f7961c);
+            
+        
+
+        marker_030e13e1b6424992562e7420d8fc40a4.bindPopup(popup_bcb384814187b75505ff9ff97ba9db8e)
+        ;
+
+        
+    
+    
+            var marker_411fb56749a2d63172b92093919b2af8 = L.marker(
+                [37.5648731412213, 127.03570299576],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_4b7f81d21ed439d6077a4b609b4dc12b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_411fb56749a2d63172b92093919b2af8.setIcon(icon_4b7f81d21ed439d6077a4b609b4dc12b);
+        
+    
+        var popup_86f021c79e247b07838261a48cd157e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bd5a871153c998429ca69cf8df73c9d = $(`<div id="html_8bd5a871153c998429ca69cf8df73c9d" style="width: 100.0%; height: 100.0%;">예전약국 - 전화번호: 02-2292-4642 </div>`)[0];
+                popup_86f021c79e247b07838261a48cd157e9.setContent(html_8bd5a871153c998429ca69cf8df73c9d);
+            
+        
+
+        marker_411fb56749a2d63172b92093919b2af8.bindPopup(popup_86f021c79e247b07838261a48cd157e9)
+        ;
+
+        
+    
+    
+            var marker_833caefa802ff1e5cc7d98d907ec810b = L.marker(
+                [37.56997535154812, 127.03783895738108],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_0fa65cd26b0840c6b25aa6b08bfb710d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_833caefa802ff1e5cc7d98d907ec810b.setIcon(icon_0fa65cd26b0840c6b25aa6b08bfb710d);
+        
+    
+        var popup_046c43aa8a07daddbb22df7bd2655169 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_761fe8e7ecdded724013be62e8fb5409 = $(`<div id="html_761fe8e7ecdded724013be62e8fb5409" style="width: 100.0%; height: 100.0%;">한솔약국 - 전화번호: 02-2295-5135 </div>`)[0];
+                popup_046c43aa8a07daddbb22df7bd2655169.setContent(html_761fe8e7ecdded724013be62e8fb5409);
+            
+        
+
+        marker_833caefa802ff1e5cc7d98d907ec810b.bindPopup(popup_046c43aa8a07daddbb22df7bd2655169)
+        ;
+
+        
+    
+    
+            var marker_c2e678878b78ade348da89b317354e5e = L.marker(
+                [37.5611049829427, 127.032627176876],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_50c5af6349d6e406b60a2595dfcea18e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_c2e678878b78ade348da89b317354e5e.setIcon(icon_50c5af6349d6e406b60a2595dfcea18e);
+        
+    
+        var popup_967f35698485f36e34f24fe73159d994 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61acfafe52433e0b698d672d5238ee9b = $(`<div id="html_61acfafe52433e0b698d672d5238ee9b" style="width: 100.0%; height: 100.0%;">상도약국 - 전화번호: 02-2292-5485 </div>`)[0];
+                popup_967f35698485f36e34f24fe73159d994.setContent(html_61acfafe52433e0b698d672d5238ee9b);
+            
+        
+
+        marker_c2e678878b78ade348da89b317354e5e.bindPopup(popup_967f35698485f36e34f24fe73159d994)
+        ;
+
+        
+    
+    
+            var marker_ae88c468bfee7d6e0780da360f52693c = L.marker(
+                [37.6054064377729, 127.09566855816],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_7246feb2e2914027e175557be40d1e11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_ae88c468bfee7d6e0780da360f52693c.setIcon(icon_7246feb2e2914027e175557be40d1e11);
+        
+    
+        var popup_ef436476420ca9dca22f1018f1e3786e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cee4dc3c0f72998af2557626c67aa75 = $(`<div id="html_7cee4dc3c0f72998af2557626c67aa75" style="width: 100.0%; height: 100.0%;">오성약국 - 전화번호: 070-8805-8844 </div>`)[0];
+                popup_ef436476420ca9dca22f1018f1e3786e.setContent(html_7cee4dc3c0f72998af2557626c67aa75);
+            
+        
+
+        marker_ae88c468bfee7d6e0780da360f52693c.bindPopup(popup_ef436476420ca9dca22f1018f1e3786e)
+        ;
+
+        
+    
+    
+            var marker_1714e7b3262d72a6a0ba9c5e11c56b2c = L.marker(
+                [37.5622045860266, 127.032201520239],
+                {}
+            ).addTo(map_a937953fe007de5f9f853ea73546e97b);
+        
+    
+            var icon_3b21c8047fcbdb58473a90a5827f596f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fas fa-mortar-pestle", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_1714e7b3262d72a6a0ba9c5e11c56b2c.setIcon(icon_3b21c8047fcbdb58473a90a5827f596f);
+        
+    
+        var popup_e9e8b09d9e1f23e15253c4d85e9b4604 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6165797fc003a26a49d9cd3ca3452f45 = $(`<div id="html_6165797fc003a26a49d9cd3ca3452f45" style="width: 100.0%; height: 100.0%;">왕십리약국 - 전화번호: 02-2292-4247 </div>`)[0];
+                popup_e9e8b09d9e1f23e15253c4d85e9b4604.setContent(html_6165797fc003a26a49d9cd3ca3452f45);
+            
+        
+
+        marker_1714e7b3262d72a6a0ba9c5e11c56b2c.bindPopup(popup_e9e8b09d9e1f23e15253c4d85e9b4604)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>전체 검색 결과 리스트</title>
+    <style>
+      body {
+        margin-top: 20px;
+        margin-right: 25px;
+        margin-left: 25px;
+        line-height: 1.5;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+        table-layout: fixed; /* 테이블 레이아웃 고정 */
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden; /* 셀을 넘어가는 내용 감추기 */
+        /* white-space: nowrap; 텍스트 줄 바꿈 방지 */
+      }
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+
+      td {
+        height: 70px; /* 셀 세로 크기 지정 */
+        padding: 8px;
+      }
+
+      td:nth-child(1) {
+        width: 120px;
+      }
+
+      td:nth-child(2) {
+        width: auto;
+      }
+
+      td a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none; /* 링크 텍스트에 밑줄 제거 */
+        color: inherit; /* 링크 색상을 부모 요소에서 상속 */
+      }
+
+      td img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 20px;
+      }
+
+      .img {
+        width: auto; /* 원하는 가로 크기 설정 */
+        height: 35px; /* 원하는 세로 크기 설정 */
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+
+      .rounded-frame {
+        width: 40px; /* 원하는 가로 크기 설정 */
+        height: 40px; /* 원하는 세로 크기 설정 */
+        border-radius: 10px; /* 원하는 모서리 둥금 정도 설정 */
+        overflow: hidden; /* 이미지가 모서리를 넘어가지 않도록 처리 */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 추가 (선택사항) */
+      }
+
+      .rounded-frame img {
+        width: 100%; /* 부모 요소에 대해 100% 너비 설정 */
+        height: 100%; /* 부모 요소에 대해 100% 높이 설정 */
+        object-fit: cover; /* 이미지가 부모 요소에 꽉 차도록 설정 (부분적으로 잘릴 수 있음) */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 챗봇텍스트로고 -->
+    <div class="container">
+      <img
+        class="img"
+        src="https://proxy.goorm.io/service/659505cfe93b401d1e6806e9_d3af2lf7OyaWTWScDvV.run.goorm.io/9080/file/load/textlogo_medibot.png?path=d29ya3NwYWNlJTJGa2FrYW9ib3Rjb250YWluZXIlMkZ0ZW1wbGF0ZXMlMkZ0ZXh0bG9nb19tZWRpYm90LnBuZw==&docker_id=d3af2lf7OyaWTWScDvV&secure_session_id=-smQvN_UPV9JRmlCSgMIDcWTWoyqOLK8"
+        alt="medibot"
+      />
+      <!-- 챗봇이미지로고 -->
+      <div class="rounded-frame">
+        <img
+          src="https://proxy.goorm.io/service/659505cfe93b401d1e6806e9_d3af2lf7OyaWTWScDvV.run.goorm.io/9080/file/load/2t2flogo.png?path=d29ya3NwYWNlJTJGa2FrYW9ib3Rjb250YWluZXIlMkZ0ZW1wbGF0ZXMlMkYydDJmbG9nby5wbmc=&docker_id=d3af2lf7OyaWTWScDvV&secure_session_id=-smQvN_UPV9JRmlCSgMIDcWTWoyqOLK8"
+          alt="medibot_img"
+        />
+      </div>
+    </div>
+    <p>
+      전체 검색 결과입니다.<br />
+      '약품명'을 클릭하시면 '상세 정보'로 이동합니다.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>이미지</th>
+          <th>약품명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="{{img0}}" alt="None" /></td>
+          <td>
+            <a href="https://kakaobotcontainer-rbcrp.run.goorm.site/{{name_input}}/{{text_input}}/0"
+              >{{name0}}</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><img src="{{img1}}" alt="None" /></td>
+          <td>
+            <a href="https://kakaobotcontainer-rbcrp.run.goorm.site/{{name_input}}/{{text_input}}/1"
+              >{{name1}}</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><img src="{{img2}}" alt="None" /></td>
+          <td>
+            <a href="https://kakaobotcontainer-rbcrp.run.goorm.site/{{name_input}}/{{text_input}}/2"
+              >{{name2}}</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><img src="{{img3}}" alt="None" /></td>
+          <td>
+            <a href="https://kakaobotcontainer-rbcrp.run.goorm.site/{{name_input}}/{{text_input}}/3"
+              >{{name3}}</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><img src="{{img4}}" alt="None" /></td>
+          <td>
+            <a href="https://kakaobotcontainer-rbcrp.run.goorm.site/{{name_input}}/{{text_input}}/4"
+              >{{name4}}</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><img src="{{img5}}" alt="None" /></td>
+          <td>
+            <a href="https://kakaobotcontainer-rbcrp.run.goorm.site/{{name_input}}/{{text_input}}/5"
+              >{{name5}}</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><img src="{{img6}}" alt="None" /></td>
+          <td>
+            <a href="https://kakaobotcontainer-rbcrp.run.goorm.site/{{name_input}}/{{text_input}}/6"
+              >{{name6}}</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><img src="{{img7}}" alt="None" /></td>
+          <td>
+            <a href="https://kakaobotcontainer-rbcrp.run.goorm.site/{{name_input}}/{{text_input}}/7"
+              >{{name7}}</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><img src="{{img8}}" alt="None" /></td>
+          <td>
+            <a href="https://kakaobotcontainer-rbcrp.run.goorm.site/{{name_input}}/{{text_input}}/8"
+              >{{name8}}</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><img src="{{img9}}" alt="None" /></td>
+          <td>
+            <a href="https://kakaobotcontainer-rbcrp.run.goorm.site/{{name_input}}/{{text_input}}/9"
+              >{{name9}}</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

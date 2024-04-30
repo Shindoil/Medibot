@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bce5b13af5d5a4a1202c4d4865daf5d0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bce5b13af5d5a4a1202c4d4865daf5d0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bce5b13af5d5a4a1202c4d4865daf5d0 = L.map(
+                "map_bce5b13af5d5a4a1202c4d4865daf5d0",
+                {
+                    center: [37.5012304044979, 127.02599973034681],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0ce4397b6a7a9a934970c40cac8b765d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0ce4397b6a7a9a934970c40cac8b765d.addTo(map_bce5b13af5d5a4a1202c4d4865daf5d0);
+        
+    
+            var marker_837755751cc03dc6f915d5512acc28f9 = L.marker(
+                [37.57954418, 127.02276880000001],
+                {}
+            ).addTo(map_bce5b13af5d5a4a1202c4d4865daf5d0);
+        
+    
+            var icon_b8b972d8e211b88cdf3c09aa0336546f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_837755751cc03dc6f915d5512acc28f9.setIcon(icon_b8b972d8e211b88cdf3c09aa0336546f);
+        
+    
+        var popup_4f21ff0c918655d024a7fa0caec7f925 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33718b77bd4aa336440e3d55a5c3be2a = $(`<div id="html_33718b77bd4aa336440e3d55a5c3be2a" style="width: 100.0%; height: 100.0%;">가까운약국<br>서울특별시 성북구 보문로 44 (보문동7가)</div>`)[0];
+                popup_4f21ff0c918655d024a7fa0caec7f925.setContent(html_33718b77bd4aa336440e3d55a5c3be2a);
+            
+        
+
+        marker_837755751cc03dc6f915d5512acc28f9.bindPopup(popup_4f21ff0c918655d024a7fa0caec7f925)
+        ;
+
+        
+    
+    
+            var marker_362c3596fd48d98adcf5f373d17eb2e5 = L.marker(
+                [37.58135963, 127.02727970000001],
+                {}
+            ).addTo(map_bce5b13af5d5a4a1202c4d4865daf5d0);
+        
+    
+            var icon_03093636437aad79b2484e18e167e9e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_362c3596fd48d98adcf5f373d17eb2e5.setIcon(icon_03093636437aad79b2484e18e167e9e1);
+        
+    
+        var popup_d24226f0e49d90e7dfe9147159247548 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9c9337aa9ba77eead24d75c51a259cd = $(`<div id="html_b9c9337aa9ba77eead24d75c51a259cd" style="width: 100.0%; height: 100.0%;">서수약국<br>서울특별시 성북구 안암로 47-1, 1층 (안암동5가)</div>`)[0];
+                popup_d24226f0e49d90e7dfe9147159247548.setContent(html_b9c9337aa9ba77eead24d75c51a259cd);
+            
+        
+
+        marker_362c3596fd48d98adcf5f373d17eb2e5.bindPopup(popup_d24226f0e49d90e7dfe9147159247548)
+        ;
+
+        
+    
+    
+            var marker_2f8b193329f89d3530f0c0aaa105918c = L.marker(
+                [37.5817249, 127.0210848],
+                {}
+            ).addTo(map_bce5b13af5d5a4a1202c4d4865daf5d0);
+        
+    
+            var icon_ece42987774148e7ef88312e49bed6f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f8b193329f89d3530f0c0aaa105918c.setIcon(icon_ece42987774148e7ef88312e49bed6f8);
+        
+    
+        var popup_0cda34b2d771b91065c3f40868dc4ff5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65826907e18f4159cc657aa66f166617 = $(`<div id="html_65826907e18f4159cc657aa66f166617" style="width: 100.0%; height: 100.0%;">남정약국<br>서울특별시 성북구 보문로 71-1 (보문동5가)</div>`)[0];
+                popup_0cda34b2d771b91065c3f40868dc4ff5.setContent(html_65826907e18f4159cc657aa66f166617);
+            
+        
+
+        marker_2f8b193329f89d3530f0c0aaa105918c.bindPopup(popup_0cda34b2d771b91065c3f40868dc4ff5)
+        ;
+
+        
+    
+    
+            var marker_debcfcf2e4f24acf5419a17b10820590 = L.marker(
+                [37.58241356, 127.01934150000001],
+                {}
+            ).addTo(map_bce5b13af5d5a4a1202c4d4865daf5d0);
+        
+    
+            var icon_75c6d0046d664cc6f7562adcf5669d9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_debcfcf2e4f24acf5419a17b10820590.setIcon(icon_75c6d0046d664cc6f7562adcf5669d9c);
+        
+    
+        var popup_9ed8b46471222edcbe38536ab9cabd4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f71d13d9a5b8f456b27c112857c02134 = $(`<div id="html_f71d13d9a5b8f456b27c112857c02134" style="width: 100.0%; height: 100.0%;">회생약국<br>서울특별시 성북구 지봉로20길 57 (보문동5가)</div>`)[0];
+                popup_9ed8b46471222edcbe38536ab9cabd4f.setContent(html_f71d13d9a5b8f456b27c112857c02134);
+            
+        
+
+        marker_debcfcf2e4f24acf5419a17b10820590.bindPopup(popup_9ed8b46471222edcbe38536ab9cabd4f)
+        ;
+
+        
+    
+    
+            var marker_bf102e611dbef115b97e6a5f8158955b = L.marker(
+                [37.5835595, 127.02005729999999],
+                {}
+            ).addTo(map_bce5b13af5d5a4a1202c4d4865daf5d0);
+        
+    
+            var icon_db527ed26efd2ad2250b662a8cc0f4d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf102e611dbef115b97e6a5f8158955b.setIcon(icon_db527ed26efd2ad2250b662a8cc0f4d0);
+        
+    
+        var popup_c023fb5f839b5ef6df0012dfc6989b29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48e13678dfc8edc3f448534ae7b4a033 = $(`<div id="html_48e13678dfc8edc3f448534ae7b4a033" style="width: 100.0%; height: 100.0%;">옵티마시민약국<br>서울특별시 성북구 보문로 93, 1층 (보문동5가)</div>`)[0];
+                popup_c023fb5f839b5ef6df0012dfc6989b29.setContent(html_48e13678dfc8edc3f448534ae7b4a033);
+            
+        
+
+        marker_bf102e611dbef115b97e6a5f8158955b.bindPopup(popup_c023fb5f839b5ef6df0012dfc6989b29)
+        ;
+
+        
+    
+    
+            var marker_14f559103c13c8d045795a2fbc60467f = L.marker(
+                [37.58371438, 127.02060530000001],
+                {}
+            ).addTo(map_bce5b13af5d5a4a1202c4d4865daf5d0);
+        
+    
+            var icon_a8c3949dc5a7ebd622d2c1268728b490 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14f559103c13c8d045795a2fbc60467f.setIcon(icon_a8c3949dc5a7ebd622d2c1268728b490);
+        
+    
+        var popup_d2105894aebee75362dfd11146da0284 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_accfc1cb28ed0d4f40d46815fa9eb0ae = $(`<div id="html_accfc1cb28ed0d4f40d46815fa9eb0ae" style="width: 100.0%; height: 100.0%;">새봄약국<br>서울특별시 성북구 보문로 94 (보문동4가, 화성빌딩)</div>`)[0];
+                popup_d2105894aebee75362dfd11146da0284.setContent(html_accfc1cb28ed0d4f40d46815fa9eb0ae);
+            
+        
+
+        marker_14f559103c13c8d045795a2fbc60467f.bindPopup(popup_d2105894aebee75362dfd11146da0284)
+        ;
+
+        
+    
+    
+            var marker_ee6e4dde13c56215a9d9af5ff9f9ee43 = L.marker(
+                [37.58399202, 127.0198265],
+                {}
+            ).addTo(map_bce5b13af5d5a4a1202c4d4865daf5d0);
+        
+    
+            var icon_9971e547cc3ad0a2c2b3d241556e8b3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee6e4dde13c56215a9d9af5ff9f9ee43.setIcon(icon_9971e547cc3ad0a2c2b3d241556e8b3c);
+        
+    
+        var popup_00ea0078c679a7fdec7bda034c2aa7e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29d8d8bedcd1b8b40162a5929aada294 = $(`<div id="html_29d8d8bedcd1b8b40162a5929aada294" style="width: 100.0%; height: 100.0%;">청십자약국<br>서울특별시 성북구 보문로 99, 1층 (보문동5가, 영광빌딩)</div>`)[0];
+                popup_00ea0078c679a7fdec7bda034c2aa7e7.setContent(html_29d8d8bedcd1b8b40162a5929aada294);
+            
+        
+
+        marker_ee6e4dde13c56215a9d9af5ff9f9ee43.bindPopup(popup_00ea0078c679a7fdec7bda034c2aa7e7)
+        ;
+
+        
+    
+    
+            var marker_8755ba09ee5c909461f97839ef5cf610 = L.marker(
+                [37.58499865, 127.0312935],
+                {}
+            ).addTo(map_bce5b13af5d5a4a1202c4d4865daf5d0);
+        
+    
+            var icon_21f967013fae2bc63ba8dfbf00a1e52c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8755ba09ee5c909461f97839ef5cf610.setIcon(icon_21f967013fae2bc63ba8dfbf00a1e52c);
+        
+    
+        var popup_22cfbcbf7deae4b085000e77b4e1ffd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e94b3151b70c3bf028ac3d236331acd = $(`<div id="html_9e94b3151b70c3bf028ac3d236331acd" style="width: 100.0%; height: 100.0%;">금강약국<br>서울특별시 성북구 안암로 103, 1층 (안암동5가)</div>`)[0];
+                popup_22cfbcbf7deae4b085000e77b4e1ffd6.setContent(html_9e94b3151b70c3bf028ac3d236331acd);
+            
+        
+
+        marker_8755ba09ee5c909461f97839ef5cf610.bindPopup(popup_22cfbcbf7deae4b085000e77b4e1ffd6)
+        ;
+
+        
+    
+    
+            var marker_23171706c010e40373b5267a549bb7f1 = L.marker(
+                [37.58511033, 127.03143390000001],
+                {}
+            ).addTo(map_bce5b13af5d5a4a1202c4d4865daf5d0);
+        
+    
+            var icon_41a60a3096ac546c407d212dbea434d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_23171706c010e40373b5267a549bb7f1.setIcon(icon_41a60a3096ac546c407d212dbea434d2);
+        
+    
+        var popup_9cfcde93379ec2a07be84ad606adfe81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_070296a1bc9bfedc36ad4f2748d6edc3 = $(`<div id="html_070296a1bc9bfedc36ad4f2748d6edc3" style="width: 100.0%; height: 100.0%;">동성약국<br>서울특별시 성북구 안암로 105, 1층 (안암동5가)</div>`)[0];
+                popup_9cfcde93379ec2a07be84ad606adfe81.setContent(html_070296a1bc9bfedc36ad4f2748d6edc3);
+            
+        
+
+        marker_23171706c010e40373b5267a549bb7f1.bindPopup(popup_9cfcde93379ec2a07be84ad606adfe81)
+        ;
+
+        
+    
+    
+            var marker_e66fca78ff90d075c1b0ec0ab64e7fa9 = L.marker(
+                [37.58610949, 127.0280242],
+                {}
+            ).addTo(map_bce5b13af5d5a4a1202c4d4865daf5d0);
+        
+    
+            var icon_64061b9f286422c94b47c29e4c735b3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e66fca78ff90d075c1b0ec0ab64e7fa9.setIcon(icon_64061b9f286422c94b47c29e4c735b3d);
+        
+    
+        var popup_9845e78e2a25d94120781eb91b220981 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48af03aa9d3190cb81d0c4ad43efd53e = $(`<div id="html_48af03aa9d3190cb81d0c4ad43efd53e" style="width: 100.0%; height: 100.0%;">백두산약국<br>서울특별시 성북구 고려대로 78 (안암동5가)</div>`)[0];
+                popup_9845e78e2a25d94120781eb91b220981.setContent(html_48af03aa9d3190cb81d0c4ad43efd53e);
+            
+        
+
+        marker_e66fca78ff90d075c1b0ec0ab64e7fa9.bindPopup(popup_9845e78e2a25d94120781eb91b220981)
+        ;
+
+        
+    
+</script>
+</html>

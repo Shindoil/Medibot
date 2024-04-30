@@ -1,0 +1,4 @@
+item_namelist
+efcyQesitmlist
+item_image_urllist
+entp_name

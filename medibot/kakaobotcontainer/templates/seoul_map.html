@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dbc7a05d76e3ffb001503b17c791cb1e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dbc7a05d76e3ffb001503b17c791cb1e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dbc7a05d76e3ffb001503b17c791cb1e = L.map(
+                "map_dbc7a05d76e3ffb001503b17c791cb1e",
+                {
+                    center: [37.5012304044979, 127.02599973034681],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_36a8fdd3d609aaf7c46014add6c5beeb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_36a8fdd3d609aaf7c46014add6c5beeb.addTo(map_dbc7a05d76e3ffb001503b17c791cb1e);
+        
+    
+            var marker_5a492f3a2d23e908e7a740cdfbe75b61 = L.marker(
+                [37.50123567, 127.0266307826],
+                {}
+            ).addTo(map_dbc7a05d76e3ffb001503b17c791cb1e);
+        
+    
+            var icon_9a1f1a662d93b9e16d93fd283f8b7bb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a492f3a2d23e908e7a740cdfbe75b61.setIcon(icon_9a1f1a662d93b9e16d93fd283f8b7bb2);
+        
+    
+        var popup_191d3926547c51580e68dfe92c4efb28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_525a2f7fbd31b9413ebc89f4c759ae2c = $(`<div id="html_525a2f7fbd31b9413ebc89f4c759ae2c" style="width: 100.0%; height: 100.0%;">강남웰약국<br>서울특별시 강남구 강남대로 432 1층 (역삼동)</div>`)[0];
+                popup_191d3926547c51580e68dfe92c4efb28.setContent(html_525a2f7fbd31b9413ebc89f4c759ae2c);
+            
+        
+
+        marker_5a492f3a2d23e908e7a740cdfbe75b61.bindPopup(popup_191d3926547c51580e68dfe92c4efb28)
+        ;
+
+        
+    
+    
+            var marker_8c413cd296b4d4dedfd98b47e05ce8ad = L.marker(
+                [37.5008242263782, 127.026826396796],
+                {}
+            ).addTo(map_dbc7a05d76e3ffb001503b17c791cb1e);
+        
+    
+            var icon_19cf515dd2f7702568eb229aec081438 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c413cd296b4d4dedfd98b47e05ce8ad.setIcon(icon_19cf515dd2f7702568eb229aec081438);
+        
+    
+        var popup_4ac693301e9f5023c225a26d74d99c54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c0f7712dd55ac975dad7a4651535c80 = $(`<div id="html_9c0f7712dd55ac975dad7a4651535c80" style="width: 100.0%; height: 100.0%;">마니약국<br>서울특별시 강남구 강남대로 428, 1층 (역삼동)</div>`)[0];
+                popup_4ac693301e9f5023c225a26d74d99c54.setContent(html_9c0f7712dd55ac975dad7a4651535c80);
+            
+        
+
+        marker_8c413cd296b4d4dedfd98b47e05ce8ad.bindPopup(popup_4ac693301e9f5023c225a26d74d99c54)
+        ;
+
+        
+    
+    
+            var marker_f95b2d2be0430f83e6a9d29335d6ad52 = L.marker(
+                [37.50039403232288, 127.02698479416406],
+                {}
+            ).addTo(map_dbc7a05d76e3ffb001503b17c791cb1e);
+        
+    
+            var icon_b63ab066f569e2d5621b26eaf494c53b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f95b2d2be0430f83e6a9d29335d6ad52.setIcon(icon_b63ab066f569e2d5621b26eaf494c53b);
+        
+    
+        var popup_4775aa41903b87e0bcdb821a6cb5b20a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89323f1729406b81d18bad04651d28e8 = $(`<div id="html_89323f1729406b81d18bad04651d28e8" style="width: 100.0%; height: 100.0%;">위메이크약국<br>서울특별시 강남구 강남대로 422</div>`)[0];
+                popup_4775aa41903b87e0bcdb821a6cb5b20a.setContent(html_89323f1729406b81d18bad04651d28e8);
+            
+        
+
+        marker_f95b2d2be0430f83e6a9d29335d6ad52.bindPopup(popup_4775aa41903b87e0bcdb821a6cb5b20a)
+        ;
+
+        
+    
+    
+            var marker_f6ca87c4a57c4ede560e19cef621f395 = L.marker(
+                [37.502389199656, 127.025947091441],
+                {}
+            ).addTo(map_dbc7a05d76e3ffb001503b17c791cb1e);
+        
+    
+            var icon_86c878a283699e8e2bc6d654989e0cee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f6ca87c4a57c4ede560e19cef621f395.setIcon(icon_86c878a283699e8e2bc6d654989e0cee);
+        
+    
+        var popup_e9824fb915422bdb0871ba1dc7f51f76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6df060e4108f1cf364b4e49e5cb2959d = $(`<div id="html_6df060e4108f1cf364b4e49e5cb2959d" style="width: 100.0%; height: 100.0%;">행복한수약국<br>서울특별시 강남구 강남대로 446</div>`)[0];
+                popup_e9824fb915422bdb0871ba1dc7f51f76.setContent(html_6df060e4108f1cf364b4e49e5cb2959d);
+            
+        
+
+        marker_f6ca87c4a57c4ede560e19cef621f395.bindPopup(popup_e9824fb915422bdb0871ba1dc7f51f76)
+        ;
+
+        
+    
+    
+            var marker_45bf94027aec4dec07254772bc45179b = L.marker(
+                [37.499797544, 127.0271595299],
+                {}
+            ).addTo(map_dbc7a05d76e3ffb001503b17c791cb1e);
+        
+    
+            var icon_08f95d3c96c25b9caea4219a364bd02e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45bf94027aec4dec07254772bc45179b.setIcon(icon_08f95d3c96c25b9caea4219a364bd02e);
+        
+    
+        var popup_7f35fa418b53a785c09c147868c7bbaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_275a19498c88e4cf90a630fceec686ae = $(`<div id="html_275a19498c88e4cf90a630fceec686ae" style="width: 100.0%; height: 100.0%;">강남씨티약국<br>서울특별시 강남구 강남대로 416, 1층 (역삼동, 창림빌딩)</div>`)[0];
+                popup_7f35fa418b53a785c09c147868c7bbaa.setContent(html_275a19498c88e4cf90a630fceec686ae);
+            
+        
+
+        marker_45bf94027aec4dec07254772bc45179b.bindPopup(popup_7f35fa418b53a785c09c147868c7bbaa)
+        ;
+
+        
+    
+    
+            var marker_4935373acdb49c16932ef99714edf840 = L.marker(
+                [37.5030089141425, 127.026341665224],
+                {}
+            ).addTo(map_dbc7a05d76e3ffb001503b17c791cb1e);
+        
+    
+            var icon_422cde8ead6bd8e5fa5d1981a80cab17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4935373acdb49c16932ef99714edf840.setIcon(icon_422cde8ead6bd8e5fa5d1981a80cab17);
+        
+    
+        var popup_c614b7cf1670dc5020f17c98c11d9833 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c92cc1faaa289065ed22dd58b9158d8f = $(`<div id="html_c92cc1faaa289065ed22dd58b9158d8f" style="width: 100.0%; height: 100.0%;">성지약국<br>서울특별시 강남구 강남대로106길 9, 3층 (역삼동)</div>`)[0];
+                popup_c614b7cf1670dc5020f17c98c11d9833.setContent(html_c92cc1faaa289065ed22dd58b9158d8f);
+            
+        
+
+        marker_4935373acdb49c16932ef99714edf840.bindPopup(popup_c614b7cf1670dc5020f17c98c11d9833)
+        ;
+
+        
+    
+    
+            var marker_f7a758fb1369c6fa54f64ed5e0969084 = L.marker(
+                [37.4989401291583, 127.027622767131],
+                {}
+            ).addTo(map_dbc7a05d76e3ffb001503b17c791cb1e);
+        
+    
+            var icon_b69cb1d1be8e87c2a1fe40d9d46c3333 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f7a758fb1369c6fa54f64ed5e0969084.setIcon(icon_b69cb1d1be8e87c2a1fe40d9d46c3333);
+        
+    
+        var popup_c0e94392afc2c4efb1597c0269062e9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16c0238dabc2267f6c95b2fd4a2be120 = $(`<div id="html_16c0238dabc2267f6c95b2fd4a2be120" style="width: 100.0%; height: 100.0%;">코코온누리약국<br>서울특별시 강남구 강남대로 406 </div>`)[0];
+                popup_c0e94392afc2c4efb1597c0269062e9d.setContent(html_16c0238dabc2267f6c95b2fd4a2be120);
+            
+        
+
+        marker_f7a758fb1369c6fa54f64ed5e0969084.bindPopup(popup_c0e94392afc2c4efb1597c0269062e9d)
+        ;
+
+        
+    
+    
+            var marker_cbba83188d205c90b4dcbdf27f8ed328 = L.marker(
+                [37.5041550738018, 127.025144947963],
+                {}
+            ).addTo(map_dbc7a05d76e3ffb001503b17c791cb1e);
+        
+    
+            var icon_53f425e6174cd57d344bedbfc2b66f53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cbba83188d205c90b4dcbdf27f8ed328.setIcon(icon_53f425e6174cd57d344bedbfc2b66f53);
+        
+    
+        var popup_2c4d17319612296f233f07cfd1d6f730 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_919c7ed470830de08be12aeee85702e1 = $(`<div id="html_919c7ed470830de08be12aeee85702e1" style="width: 100.0%; height: 100.0%;">더블유약국<br>서울특별시 강남구 강남대로 468, 1층 (역삼동, 충림빌딩)</div>`)[0];
+                popup_2c4d17319612296f233f07cfd1d6f730.setContent(html_919c7ed470830de08be12aeee85702e1);
+            
+        
+
+        marker_cbba83188d205c90b4dcbdf27f8ed328.bindPopup(popup_2c4d17319612296f233f07cfd1d6f730)
+        ;
+
+        
+    
+    
+            var marker_1b04cfd41d6cd4e1381124e5ba946638 = L.marker(
+                [37.4986224205, 127.0280638046],
+                {}
+            ).addTo(map_dbc7a05d76e3ffb001503b17c791cb1e);
+        
+    
+            var icon_d3d63ab7b3798f6db65d99ee73b89a4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b04cfd41d6cd4e1381124e5ba946638.setIcon(icon_d3d63ab7b3798f6db65d99ee73b89a4f);
+        
+    
+        var popup_06d2967d467099161ef753e9ea1144a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8807a3dd99800d8865ec40c8891cba54 = $(`<div id="html_8807a3dd99800d8865ec40c8891cba54" style="width: 100.0%; height: 100.0%;">이즈타워약국<br>서울특별시 강남구 테헤란로 101, 지하1층 103호 (역삼동, 이즈타워)</div>`)[0];
+                popup_06d2967d467099161ef753e9ea1144a0.setContent(html_8807a3dd99800d8865ec40c8891cba54);
+            
+        
+
+        marker_1b04cfd41d6cd4e1381124e5ba946638.bindPopup(popup_06d2967d467099161ef753e9ea1144a0)
+        ;
+
+        
+    
+    
+            var marker_f4c72eca1e423bb95db4cf5cd629b361 = L.marker(
+                [37.4986232309429, 127.028065727387],
+                {}
+            ).addTo(map_dbc7a05d76e3ffb001503b17c791cb1e);
+        
+    
+            var icon_cea311ee7b3f92bf04c984f20e6f4839 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f4c72eca1e423bb95db4cf5cd629b361.setIcon(icon_cea311ee7b3f92bf04c984f20e6f4839);
+        
+    
+        var popup_0858b7d984b6351394f3643b6126def2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd80ad73c683990955a67d913d347176 = $(`<div id="html_cd80ad73c683990955a67d913d347176" style="width: 100.0%; height: 100.0%;">제이약국<br>서울특별시 강남구 테헤란로 101  (역삼동)</div>`)[0];
+                popup_0858b7d984b6351394f3643b6126def2.setContent(html_cd80ad73c683990955a67d913d347176);
+            
+        
+
+        marker_f4c72eca1e423bb95db4cf5cd629b361.bindPopup(popup_0858b7d984b6351394f3643b6126def2)
+        ;
+
+        
+    
+</script>
+</html>
