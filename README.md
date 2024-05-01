@@ -35,13 +35,13 @@ Folium 라이브러리 (지도 시각화)
 
 ## 프로젝트 구조
 
-server1.py: 메인 서버 파일로, Flask 애플리케이션을 구동하고 API 엔드포인트를 정의합니다.
-server2.py: 약 이미지 처리를 담당하는 서브 서버 파일입니다.
-templates/: HTML 템플릿 파일들이 위치한 디렉토리입니다.
-static/: 정적 파일(CSS, JavaScript, 이미지 등)이 위치한 디렉토리입니다.
-csv/: 약품 정보 데이터가 저장된 CSV 파일이 위치한 디렉토리입니다.
-get_img/: 사용자가 업로드한 약 이미지가 저장되는 디렉토리입니다.
-pill_Detection/, preprocessed_img/, output_results/: 약 이미지 처리 과정에서 생성되는 중간 결과물이 저장되는 디렉토리들입니다.
+- server1.py: 메인 서버 파일로, Flask 애플리케이션을 구동하고 API 엔드포인트를 정의합니다.
+- server2.py: 약 이미지 처리를 담당하는 서브 서버 파일입니다.
+- templates/: HTML 템플릿 파일들이 위치한 디렉토리입니다.
+- static/: 정적 파일(CSS, JavaScript, 이미지 등)이 위치한 디렉토리입니다.
+- csv/: 약품 정보 데이터가 저장된 CSV 파일이 위치한 디렉토리입니다.
+- get_img/: 사용자가 업로드한 약 이미지가 저장되는 디렉토리입니다.
+- pill_Detection/, preprocessed_img/, output_results/: 약 이미지 처리 과정에서 생성되는 중간 결과물이 저장되는 디렉토리들입니다.
 
 ## 설치 및 실행 방법
 
