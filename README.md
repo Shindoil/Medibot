@@ -57,10 +57,10 @@ codepython server2.py
 - 웹 브라우저에서 http://localhost:5000으로 접속하여 애플리케이션을 사용합니다.
 
 ## 작업툴
-Python 3.9.13
-Visual Studio Code
-GitHub
-goormIDE
+- Python 3.9.13
+- Visual Studio Code
+- GitHub
+- goormIDE
 
 ## 기여자
 - 김진화 - 프론트 엔드
