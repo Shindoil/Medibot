@@ -11,27 +11,27 @@
 
 ## 사용 기술 및 라이브러리
 ### 백엔드
-Python
-Flask 웹 프레임워크
-requests 라이브러리 (HTTP 요청 처리)
-BeautifulSoup 라이브러리 (웹 스크래핑)
-YOLO (객체 탐지 모델)
-EasyOCR (광학 문자 인식 라이브러리)
-OpenCV (이미지 처리 라이브러리)
-Pandas (데이터 처리 및 분석 라이브러리)
-NumPy (수치 연산 라이브러리)
+- Python
+- Flask 웹 프레임워크
+- requests 라이브러리 (HTTP 요청 처리)
+- BeautifulSoup 라이브러리 (웹 스크래핑)
+- YOLO (객체 탐지 모델)
+- EasyOCR (광학 문자 인식 라이브러리)
+- OpenCV (이미지 처리 라이브러리)
+- Pandas (데이터 처리 및 분석 라이브러리)
+- NumPy (수치 연산 라이브러리)
 
 ### 프런트엔드
-HTML/CSS
-JavaScript
-jQuery
-Bootstrap
+- HTML/CSS
+- JavaScript
+- jQuery
+- Bootstrap
 
 ## 외부 API 및 데이터
 
-공공데이터포털 API (약품 정보 검색)
-Google Maps Geocoding API (주소 좌표 변환)
-Folium 라이브러리 (지도 시각화)
+- 공공데이터포털 API (약품 정보 검색)
+- Google Maps Geocoding API (주소 좌표 변환)
+- Folium 라이브러리 (지도 시각화)
 
 ## 프로젝트 구조
 
