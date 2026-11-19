@@ -557,7 +557,7 @@ def pham_loc():
 # 약국 조회 처리 geo_code(사용자 입력주소 좌표변환), forlium(지도 시각화) 
 def get_geo_api(user_input):
     print('약국 조회 처리 part start')
-    api_key = "AIzaSyAkVCM0BzXTQIHFZ-FnI_lWgIrUte_I_UU"                 # 구글 maps api_key
+    api_key = os.environ["GOOGLE_MAPS_API_KEY"]  # Provided by the deployment environment.
     base_url = "https://maps.googleapis.com/maps/api/geocode/json"
     params = {
         "address": user_input,
